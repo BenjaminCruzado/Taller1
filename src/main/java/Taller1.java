@@ -65,7 +65,7 @@ public class Taller1 {
     }
     public static int calcularEstudiantesAprobados(double[][] notas){
         int aprovados= 0;
-        for (int i = 0; i < notaAleatoria() ; i++) {
+        for (int i = 0; i < notas.length ; i++) {
             if (notas[i][0] != 0.0){
                 double promedio = sacarPromedio(notas, notas[i][0], notas[i][1], notas[i][2], notas[i][3], notas[i][4]);
                 if (promedio >= 4.0){
@@ -76,7 +76,7 @@ public class Taller1 {
     }
     public static int calcularEstudiantesReprovados(double[][] notas){
         int reprovados= 0;
-        for (int i = 0; i < notaAleatoria() ; i++) {
+        for (int i = 0; i < notas.length ; i++) {
             if (notas[i][0] != 0.0){
                 double promedio = sacarPromedio(notas, notas[i][0], notas[i][1], notas[i][2], notas[i][3], notas[i][4]);
                 if (promedio < 3.6){
@@ -87,7 +87,7 @@ public class Taller1 {
     }
     public static int calcularEstudiantesExamen(double[][] notas){
         int examen= 0;
-        for (int i = 0; i < notaAleatoria() ; i++) {
+        for (int i = 0; i < notas.length ; i++) {
             if (notas[i][0] != 0.0){
                 double promedio = sacarPromedio(notas, notas[i][0], notas[i][1], notas[i][2], notas[i][3], notas[i][4]);
                 if (promedio >= 3.6 & promedio <4.0){
